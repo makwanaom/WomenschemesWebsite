@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback-form</title>
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -12,7 +17,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0%;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(240, 231, 231);
       max-width: 100vw !important;
       /* background-image: url(https://th.bing.com/th/id/OIP.CSThJ0qpV3XKsURD0iKZ0AHaEK?pid=ImgDet&rs=1);
       background-attachment: fixed;
@@ -33,7 +38,6 @@
       overflow: auto;
 
     }
-
     .navbar {
       overflow: hidden;
       background-color: #333;
@@ -104,7 +108,7 @@
       position: absolute;
       background-color: #f9f9f9;
       margin-top: -42px;
-      margin-left: 290px;
+      margin-left: 264px;
       min-width: 300px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -146,7 +150,7 @@
       position: absolute;
       background-color: #f9f9f9;
       margin-top: -42px;
-      margin-left: 290px;
+      margin-left: 264px;
       min-width: 300px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -189,7 +193,7 @@
       position: absolute;
       background-color: #f9f9f9;
       margin-top: -42px;
-      margin-left: 290px;
+      margin-left: 264px;
       min-width: 300px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -225,9 +229,6 @@
     }
     .dropdown-content-3:hover .dropdown-content-31{
       display: block;
-    }
-    .bullet {
-      list-style-type: square;
     }
 
 
@@ -265,7 +266,24 @@
       display: block;
     }
 
-    
+    .footbar {
+      overflow: hidden;
+      background-color: #333;
+      background-attachment: fixed;
+    }
+
+    .footbar a {
+      background-color: rgb(255, 255, 255);
+      padding: 10px 15px;
+      border-radius: 30px;
+      margin: 5px 10px;
+      text-decoration: none;
+
+    }
+
+    .footbar a:hover {
+      background-color: rgb(253, 0, 0);
+    }
 
     * {
       box-sizing: border-box
@@ -287,19 +305,17 @@
     /* Slideshow container */
     .slideshow-container {
       background: white;
-      max-width: 80vw;
+      max-width: 1000px;
       border: solid 5px black;
       margin-top: 60px;
-      margin-left: 19vw;
-      margin-right: 19vw;
-      float: none;
+      margin-left: 160px;
     }
-    .gujarati{
-         float: right;
+
+    .gujarati {
+      right: 20px;
+      /* left: 40px; */
     }
-   .size{
-    transition: all ease-in 3s;
-   }
+
 
     /* Caption text */
     .text {
@@ -341,7 +357,7 @@
     /* Fading animation */
     .fade {
       animation-name: fade;
-      transition: ease-in 2s;
+
       animation-duration: 0.5s;
     }
 
@@ -364,6 +380,13 @@
         font-size: 11px
       }
     }
+  
+    .f-form{
+        margin-left: 50px;
+    }
+    #state{
+        margin-left: 100px;
+    }
     .footer-dark {
   padding:50px 0 0 50px;;
   color:#f0f9ff;
@@ -381,11 +404,9 @@
   padding:0;
   list-style:none;
   line-height:2.5;
- 
   font-size:14px;
   margin-bottom:0;
 }
-
 
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {
@@ -403,20 +424,7 @@
     margin-bottom:0;
   }
 }
-@media  (min-width: 767px) {
-  .visit-counter{
-  text-align: center;
-  margin-top: -150px;
-  margin-bottom: 50;
-  overflow: hidden;
-}
-}
-@media (max-width: 400px){
-.visit-counter{
-margin: 10px 30px 10px 00px;
-font-size: 70%;
-}
-}
+
 .footer-dark .item.text p {
   opacity:0.6;
   margin-bottom:0;
@@ -433,6 +441,20 @@ font-size: 70%;
     text-align:center;
     margin-top:10px;
   }
+}
+@media  (min-width: 767px) {
+  .visit-counter{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 50;
+  overflow: hidden;
+}
+}
+@media (max-width: 400px){
+.visit-counter{
+margin: 10px 30px 10px 00px;
+font-size: 70%;
+}
 }
 
 .footer-dark .item.social > a {
@@ -462,7 +484,8 @@ font-size: 70%;
   margin-bottom:0;
 }
 
-#myBtn {
+
+    #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -482,219 +505,174 @@ font-size: 70%;
   background-color: red; /* Add a dark-grey background on hover */
 }
   </style>
-</head>
-
 <body>
-
-
-  <header>
-    <div class="right">
-      <img class="img" src="./logo.png" alt="This is LOGO" width="60vw" height="50vh">
-
-      <h1> Women Welfare Schemes</h1>
-    </div>.
-
-  </header>
-  <!-- code for navigation bar -->
-  <div id="navbar" class="navbar">
-    <a class="active" href="./index.html">Home</a>
-    <!-- <a href="#about">About Us</a> -->
-    <div class="dropdown">
-      <button class="dropbtn">About Us
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="./introduction.html">Introduction</a>
-        <a href="./vision.html">Vision </a>
-        <a href="./objectives.html">Objectives</a>
-        <a href="./who_we_are_.html">Who we are</a>
-        <a href="./what_we_do.html">What we do</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Schemes
-        <i class="fa fa-caret-down"></i>
-      </button>
-      
-      <div class="dropdown-content">
-        <a target="_self" href="./wEMPOWERMENTSCHEME.html">Women Empowerment Schemes </a>
+    <header>
+        <div class="right">
+          <img class="img" src="logo.png" alt="This is LOGO" width="60vw" height="50vh">
+    
+          <h1> Women Welfare Schemes</h1>
+        </div>
+    
+      </header>
+      <!-- code for navigation bar -->
+      <div id="navbar" class="navbar">
+        <a class="active" href="/index.html">Home</a>
+        <!-- <a href="#about">About Us</a> -->
         <div class="dropdown">
-         
-          <div class="dropdown-content-1">
-            <a href="./wEMPOWERMENTSCHEME.html">Kishori sakti Yojna</a>
-            <div class="dropdown">
-         
-              <div class="dropdown-content-11">
-                <a href="./wEMPOWERMENTSCHEME.html">Related to Self Developement <hr> Age : 12-18 <hr>Annual Income : Less than 2 Lakhs</a>
-              </div>
-            </div>
+          <button class="dropbtn">About Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/introduction.html">Introduction</a>
+            <a href="/vision.html">Vision </a>
+            <a href="/objectives.html">Objectives</a>
+            <a href="/who_we_are_.html">Who we are</a>
+            <a href="/what_we_do.html">What we do</a>
           </div>
         </div>
-        <a href="./wEducationScheme.html">Women Education Schemes </a>
         <div class="dropdown">
-         
-          <div class="dropdown-content-2">
-            <a href="./wEducationScheme.html">Vahali Dikari Yojna</a>
+          <button class="dropbtn">Schemes
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a target="_self" href="/wEMPOWERMENTSCHEME.html">Women Empowerment Schemes </a>
             <div class="dropdown">
-         
-              <div class="dropdown-content-21">
-                <a href="./wEMPOWERMENTSCHEME.html">Must belong to EWS, BPL<hr> To eliminate child mortality and child marriage <hr>Rs 1,10,000 subsidy on birth of first girl child</a>
+             
+              <div class="dropdown-content-1">
+                <a href="./wEMPOWERMENTSCHEME.html">Kishori sakti Yojna</a>
+                <div class="dropdown">
+             
+                  <div class="dropdown-content-11">
+                    <a href="./wEMPOWERMENTSCHEME.html">Related to Self Developement <hr> Age : 12-18 <hr>Annual Income : Less than 2 Lakhs</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/wEducationScheme.html">Women Education Schemes </a>
+            <div class="dropdown">
+             
+              <div class="dropdown-content-2">
+                <a href="./wEMPOWERMENTSCHEME.html">Vahali Dikari Yojna</a>
+                <div class="dropdown">
+             
+                  <div class="dropdown-content-21">
+                    <a href="./wEMPOWERMENTSCHEME.html">Must belong to EWS, BPL<hr> To eliminate child mortality and child marriage <hr>Rs 1,10,000 subsidy on birth of first girl child</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <a href="/meternity schemes .html">Women maternity Schemes</a>
+             <div class="dropdown">
+             
+              <div class="dropdown-content-3">
+                <a href="./wEMPOWERMENTSCHEME.html">Beti Bachao Beti Padhao</a>
+                <div class="dropdown">
+             
+                  <div class="dropdown-content-31">
+                    <a href="./wEMPOWERMENTSCHEME.html">Promotes girl child education<hr>Age criteria < 10yrs<hr> be Sukanya Samriddhi Account holder</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/employement schemes.html">Women Employment Schemes</a>
+            <div class="dropdown">
+             
+              <div class="dropdown-content-3">
+                <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Amrutum Yojna</a>
+                <div class="dropdown">
+             
+                  <div class="dropdown-content-31">
+                    <a href="./wEMPOWERMENTSCHEME.html">Medical expenses covered upto Rs5lakhs/year<hr>All basic medications covered<hr>Annual income : less than Rs 6lakhs</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/other schemes.html">Other Schemes</a>
+            <div class="dropdown">
+             
+              <div class="dropdown-content-3">
+                <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Mahila Utkarsh Yojna</a>
+                <div class="dropdown">
+             
+                  <div class="dropdown-content-31">
+                    <a href="./wEMPOWERMENTSCHEME.html">Interest free loans<hr> Self-helf groups must include ten members ea<hr>To ensure employment to women</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+    
         </div>
-
-        <a href="./meternity schemes .html">Women maternity Schemes</a>
-         <div class="dropdown">
+        <a href="./ContactUs.html">Contact Us</a>
+        <a href="./helplinecentre.html">Helpline Centre's (Map)</a>
+        <a href="./feedback.html">Feedback</a>
+        <!-- code for search bar -->
+        <div class="Search">
+          <form class="d-flex" role="search" action="https://www.google.com/search" method="search">
+            <input class="form-control-me-2" type="text"  placeholder="Search Here" aria-label="Search" 
+              name="q" value="" id="my-input" >
+            <button class="btn-btn-outline-success" onclick="searchWithinPage()"  type="submit">Search</button>
+          </form>
+    
          
-          <div class="dropdown-content-3">
-            <a href="./wEducationScheme.html">Beti Bachao Beti Padhao</a>
-            <div class="dropdown">
-         
-              <div class="dropdown-content-31">
-                <a href="./wEMPOWERMENTSCHEME.html">Promotes girl child education<hr>Age criteria < 10yrs<hr> be Sukanya Samriddhi Account holder</a>
-              </div>
-            </div>
-          </div>
         </div>
-        <a href="./employement schemes.html">Women Employment Schemes</a>
-        <div class="dropdown">
-         
-          <div class="dropdown-content-3">
-            <a href="./meternity schemes .html">Mukhyamantri Amrutum Yojna</a>
-            <div class="dropdown">
-         
-              <div class="dropdown-content-31">
-                <a href="./wEMPOWERMENTSCHEME.html">Medical expenses covered upto Rs5lakhs/year<hr>All basic medications covered<hr>Annual income : less than Rs 6lakhs</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="./other schemes.html">Other Schemes</a>
-        <div class="dropdown">
-         
-          <div class="dropdown-content-3">
-            <a href="./employement schemes.html">Mukhyamantri Mahila Utkarsh Yojna</a>
-            <div class="dropdown">
-         
-              <div class="dropdown-content-31">
-                <a href="./wEMPOWERMENTSCHEME.html">Interest free loans<hr> Self-helf groups must include ten members ea<hr>To ensure employment to women</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    
       </div>
-
-    </div>
-    <a href="./ContactUs.html">Contact Us</a>
-    <a href="./helplinecentre.html">Helpline Centre's</a>
-    <a href="./feedback.html">Feedback</a>
-    <!-- code for search bar -->
-    <div class="Search">
-      <form class="d-flex" role="search" action="https://www.google.com/search" method="search">
-        <input class="form-control-me-2" type="text" placeholder="Search Here" aria-label="Search" name="q" value=""
-          id="my input" onkeyup="Searchbar()">
-        <button class="btn-btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-
-  </div>
-   <section id="google_element" class="gujarati"></section>
-
-
-  <br >
-  <!-- code for slideshow -->
-  <section>
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="./health and welfare schemes.jpg" style="width: 60vw; ">
-        <div class="text"></div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="./2.png" style="width:60vw">
-        <div class="text"></div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="./women activities.jpg" style="width:60vw">
-        <div class="text"></div>
-      </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-  </section>
-  <!-- code for homepage content -->
-  <div class="home">
-    <ul class="bullet">
-
-
-      <h2 >
-        <li>Woman Welfare Schemes</li>
-      </h2>
-      <br>
-      <div class="size" >
-        <p > The Social Welfare Department has stepped forward to take initiatives for the welfare of
-          woman.
-
-          The following schemes have been initiated to work towards the betterment of women in the state :</p>
-        <p >
-          The constitution of India resolves to constitute India into a Sovereign Socialist Secular Democratic Republic
-          and secure to all citizens its Fundamental Rights. The Principle of Gender equality grants equality to women
-          and empowers the State to adopt measures of positive discrimination in favor of women.</p>
-        <p>The Department is sensitive in eliminating gender based discrimination from society through gender
-          sensitization and gender just development in Gujarat. It mainstreams women in programs, plans, development and
-          implementations by bridging the gap of gender bias. It has fringed policies that ensure gender equality. For
-          the family welfare, the department functions for activities in coordination with other Departments and
-          organizations in connection with this subject. It plays a significant role for Socio-economic-educational
-          welfare of Women and children and imparts empowerment guidelines and awareness.</p>
+     
+      <div class="f-img">
+        <img src="/feedback.jpg" alt="img" height="350px" width="1519px"> 
       </div>
       <br>
-      <h2>
-        <li>Nari Gaurav Din:</li>
-      </h2>
-      <div class="size">
-        <p>
-          Every year, the day of <b>8th March</b> is celebrated as "Nari Gaurav Din" A formal function is organized at
-          State level and information, education and communication (I.E.C.) activities are carried out to various
-          Government Program and Schemes.</p>
-      </div>
       <br>
-      <h2>
-        <li>Woman Helpline:</li>
-      </h2>
-      <div class="size">
-        <p>
-          The Scheme of Universalisation of Women Helpline is intended to provide 24 hours immediate and emergency
-          response to women affected by violence through referral (linking with appropriate authority such as police,
-          One Stop Centre, hospital) and information about women related government schemes programs across the country
-          through a single uniform number.</p>
-      </div>
-      <br>
-      <h2>
-        <li>Helpline Number:</li>
-      </h2>
-      <div class="size">
-        <p>
-          The Women Helpline is intended to provide <b>24 hours</b> immediate and emergency repsponse to women affected
-          by violence through referral and information about women related government schemes.
-          The Women Helpline Number is <b>181.</b></p>
-    </ul>
-  </div>
-  </div>
+
+       <div class="f-form">
+           
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" style="width: 750px; height: 40px;" required><br>
+            <br>
+            
+            <br>
+             <label for="Address">Address: </label><br>
+            <textarea name="ad" id="address" cols="30" rows="10" style="width: 750px; height: 40px;" required></textarea>
+            <br>
+            <br>
+            <br>
+            <label for="feedback">Feedback:</label> <br>
+            <input type="text-area" name="fd" id="feedback" style="width: 750px; height: 40px;" required>
+            <br>
+            <br>
+            <br>
+            <label for="city">City:</label>
+            <input type="text" name="ct" id="city" style="width: 270px; height: 40px;" required>
+            <label for="state" id="state">State:</label>
+            <input type="text" name="st" style="width: 270px; height: 40px;"  required>
+            <br>
+            <br>
+            <label for="pincode">Pincode:</label><br>
+            <input type="number" name="pn" id="pincode" style="width: 750px; height: 40px;" required>
+            <br>
+            <br>
+            <br>
+             <label for="mobile"> Mobile:</label><br>
+             <input type="number" name="mo" id="mobile" style="width: 750px; height: 40px;" required><br>
+             <br>
+             <br>
+    
+             <label for="email">Email:</label><br>
+             <input type="email" name="em" id="email" style="width: 750px; height: 40px;" required>
+             <br>
+             <br>
+
+            
+             <br>
+             <!-- <input type="submit" name="sb" id="submit" value="submit"> -->
+             <button type="submit">Submit</button>
+        </form>
+       </div>
+    
   <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-  
   <div class="footer-dark">
     <footer>
         <div class="container">
@@ -713,7 +691,7 @@ font-size: 70%;
                   <h1 id="count">0</h1>
                   <p>times</p>
                 </div>
-                <div class="col item social"> FOLLOW US ON : <br><br><a target="_blank" href="https://www.facebook.com/WCDGujarat/"><i class="icon ion-social-facebook"></i></a><a target="_blank" href="https://twitter.com/WCDGujarat"><i class="icon ion-social-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/company/women-child-development-department-govt-of-gujarat/?originalSubdomain=in"><i class="icon ion-social-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/wcdgujarat/?hl=en"><i class="icon ion-social-instagram"></i></a></div>
+                <div class="col item social">FOLLOW US ON : <br><br><a target="_blank" href="https://www.facebook.com/WCDGujarat/"><i class="icon ion-social-facebook"></i></a><a target="_blank" href="https://twitter.com/WCDGujarat"><i class="icon ion-social-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/company/women-child-development-department-govt-of-gujarat/?originalSubdomain=in"><i class="icon ion-social-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/wcdgujarat/?hl=en"><i class="icon ion-social-instagram"></i></a></div>
             </div>
             <p class="copyright">Copyright @ Government of Gujarat</p>
         </div>
@@ -722,49 +700,32 @@ font-size: 70%;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-  <script>
 
-    window.onscroll = function () { myFunction() };
+        <!-- code for slideshow -->
+      <script>
+        (function () {
+  'use strict'
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
 
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-    // Get the button:
+      </script>
+      <script>
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -796,16 +757,24 @@ const countEl = document.getElementById("count");
       }
   </script>
 
-  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-  <script>
-    function loadGoogleTranslate() {
-      new google.translate.TranslateElement(
-        "google_element");
-    }
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        
 
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    username : "avinashtanti0712@gmail.com",
+    Password : "123456",
+    To : 'ommakwana404@gamil.com',
+    From : document.getElementById('email').value,
+    Subject : "new contact from enquiry ",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 
-  </script>
-
+        }
+      </script>
 </body>
-
 </html>
